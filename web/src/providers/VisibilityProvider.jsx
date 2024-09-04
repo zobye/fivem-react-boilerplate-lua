@@ -35,7 +35,7 @@ export const VisibilityProvider = ({ children }) => {
     }, [visible]);
 
     return (
-        <VisibilityCtx.Provider value={{ visible, setVisible, }} >
+        <VisibilityCtx.Provider value={{ visible, setVisible }} >
             <div style={{ visibility: visible ? "visible" : "hidden", height: "100%" }} >
                 {children}
             </div>
